@@ -53,17 +53,20 @@ let ages = [21, 33, 44, 26, 28];
 let lastEvenIndex = ages.findLastIndex(age => age % 2 === 0);
 alert(lastEvenIndex); // 4
 
+
 //filter  Crea un nuevo array con todos los elementos que 
 //pasan la prueba implementada por la función proporcionada.
-let user = [1, 2, 3, 4, 5];
-let evenNumbers = numuser.filter(num => num % 2 === 0);
-alert(evenNumbers); // [2, 4]
+let user = ['Alice', 'Bob', 'Charlie', 'David', 'Eva'];
+let longNames = user.filter(name => name.length > 5);
+alert(longNames); // ['Charlie']
+
 
 //map  Crea un nuevo array con los resultados de 
 //llamar a una función para cada elemento del array.
 // Crear un nuevo array con las palabras en mayúsculas.
+
 let wordsZ = ['apple', 'orange', 'banana'];
-let uppercaseWordsZ = wordsZ.map(word => word.toUpperCase());
+let uppercaseWords= wordsZ.map(word => word.toUpperCase());
 alert(uppercaseWords); // ['APPLE', 'ORANGE', 'BANANA']
 
 //sort Ordena los elementos de un array.
@@ -87,6 +90,7 @@ alert(words); // ['Hola,', '¿cómo', 'estás?']
 
 //join Combina todos los elementos de un array en una cadena de texto.
 //Unir elementos de una lista en una oración.
+
 let fruitsQ = ['apple', 'orange', 'banana'];
 let sentenceQ = fruits.join(', ');
 alert(sentence); // 'apple, orange, banana'
